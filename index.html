@@ -22,12 +22,16 @@
     <p>
 		<em><strong>Wpisz swoje imię, nazwisko, Wiek i Email:</strong></em>
 	</p>
-    <div><label>Imię <input type="text" name="imie"></label>
-        <label>Nazwisko <input type="text" name="Nazwisko"></label>
+    <div><label for="name">Imię</label>
+        <input type="text" name="name" id="name" pattern=".{4,}" required>
+        <label for="name">Nazwisko</label>
+        <input type="text" name="name" id="name" pattern=".{4,}" required>
     </div>
     
-    <label>Email <input type="text" name="Email"></label>
-    <label>Wiek <input type="number" name="Wiek"></label>
+    <label for="Email">Email</label>
+    <input type="email" name="email" id="email" required>
+    <label for="age">Wiek</label>
+    <input type="number" name="age" id="age" required>
     <p>
 		<em><strong>Wybierz datę</strong></em>
 	</p>
