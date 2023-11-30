@@ -1,84 +1,146 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>Koncerty Ado</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Świeta</title>
     <style>
         body {
-		height: 850;
-		width: 1800;
-    background-image: url(Material-Backgrounds-23-1980-x-1080.jpg);
-}
-	.center {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		height: 100vh;
-	}
-        </style>
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #72e73c;
+            color: #fff;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Dodaj animacje świąteczne */
+        @keyframes snowfall {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(10px);
+            }
+        }
+
+        .snowflake {
+            position: fixed;
+            top: 0;
+            width: 5px;
+            height: 5px;
+            background-color: #fff;
+            animation: snowfall 0.5s infinite;
+        }
+
+        @media (max-width: 768px) {
+            /* Dodaj responsywność dla mniejszych ekranów */
+            nav {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 <body>
-   <form action="mailto:piotrekkulik69@gmail.com" method="post">
-    <p>
-		<em><strong>Wpisz swoje imię, nazwisko, Wiek i Email:</strong></em>
-	</p>
-    <div><label for="name">Imię</label>
-        <input type="text" name="name" id="name" pattern=".{4,}" required>
-        <label for="name">Nazwisko</label>
-        <input type="text" name="name" id="name" pattern=".{4,}" required>
-    </div>
-    
-    <label for="Email">Email</label>
-    <input type="email" name="email" id="email" required>
-    <label for="age">Wiek</label>
-    <input type="number" name="age" id="age" required>
-    <p>
-		<em><strong>Wybierz datę</strong></em>
-	</p>
-	<div>
-		<select name="data">
-			<option>12.10</option>
-			<option>19.10</option>
-			<option>26.10</option>
-			<option>02.11</option>
-			<option>09.11</option>
-			<option>16.11</option>
-            <option>23.11</option>
-            <option>31.11</option>
-		</select>
-        <p>
-            <em><strong>Wybierz jedzenie i picie</strong></em>
-        </p>
-        <div>
-            <select size="10" name="food and drinks">
-                <option>pizza</option>
-                <option>cola</option>
-                <option>fanta</option>
-                <option>spaghetti</option>
-                <option>woda</option>
-                <option>woda gazowana</option>
-                <option>grochówka</option>
-                <option>falafele</option>
-            </select>
-	</div>
-    <p><strong><em>Jakie piosenki chcesz usłyszeć</em></strong</p>
-	<div>
-		<input type="checkbox" name="song" value="Show" />Show<br />
-		<input type="checkbox" name="song" value="Tot musica" />Tot musica<br />
-		<input type="checkbox" name="song" value="Backlight" />Backlight<br />
-        <input type="checkbox" name="song" value="Kura Kura" />Kura Kura<br />
-	</div>
-    <p><em>Czy zgadzasz się na przetwarzanie danych</em></p>
-	<div>
-		<input type="radio" checked="checked" name="Tak" value="Tak" />Tak<br />
-		
-	</div>
-    <div>
-		<input type="hidden" name="id" value="1" />
-		<p>Czy na pewno chcesz wysłać ten formularz?</p>
-		<input type="submit" VALUE="Wyślij"> <INPUT TYPE="reset" />
-		<input type="button" name="odrzucenie" value="Nie" />
-	</div>
-   </form>
+
+    <header>
+        <h1>Wesołych Świąt!</h1>
+        <img src="santa_claus_image.jpg" alt="Święty Mikołaj">
+    </header>
+
+    <nav>
+        <a href="Podstrona 1.html">Kolędy</a>
+        <a href="Podstrona 2.html">Galeria</a>
+        <a href="Podstrona 3.html">Gry świąteczne i Przepisy</a>
+    </nav>
+
+    <section id="koledy">
+        <!-- Tu będzie sekcja z kolędami -->
+    </section>
+
+    <section id="galeria">
+        <!-- Tu będzie Sekcja z galerią zdjęć -->
+    </section>
+
+    <section id="Gry świąteczne i Przepisy">
+        <!-- Tu będzie Sekcja z grami świątecznymi --> 
+    </section>
+
+
+    <section id="kontakt">
+        <h2>Kontakt</h2>
+        <p>Dane kontaktowe do twórców strony:</p>
+        <ul>
+            <li>Pseudonim  - ktoś@gmail.com</li>
+        </ul>
+
+        <p>Udostępnij nasz projekt na mediach społecznościowych:</p>
+        <ul>
+            <li><a href="https://www.facebook.com/">Facebook</a></li>
+            <li><a href="https://twitter.com/">Twitter</a></li>
+            <!-- Dodaj inne platformy społecznościowe -->
+        </ul>
+    </section>
+
+    <footer>
+        &copy; 2023 Świąteczna Strona. Wszelkie prawa zastrzeżone i zagrożone.
+    </footer>
+
+    <!-- Dodaj animacje świąteczne (śnieżynki) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const snowflakesContainer = document.body;
+            const numberOfSnowflakes = 50;
+
+            for (let i = 0; i < numberOfSnowflakes; i++) {
+                createSnowflake();
+            }
+
+            function createSnowflake() {
+                const snowflake = document.createElement('div');
+                snowflake.className = 'snowflake';
+                snowflake.style.left = Math.random() * window.innerWidth + 'px';
+                snowflake.style.animationDuration = Math.random() * 1 + 0.5 + 's';
+                snowflakesContainer.appendChild(snowflake);
+
+                snowflake.addEventListener('animationiteration', () => {
+                    snowflake.style.left = Math.random() * window.innerWidth + 'px';
+                });
+            }
+        });
+    </script>
+
 </body>
 </html>
