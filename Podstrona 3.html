@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Świąteczne Zabawy i Przepisy</title>
+    <style>
+    body {
+        background-color: #e9e9e9;
+        background-image: url(wallpaperbetter.com_1920x1080.jpg);
+    }
+    
+    .inline {
+        display: inline-block;
+        top: 0;
+        vertical-align: top;
+    }
+    
+    #choose, #players, #resert_div {
+        width: 400px;
+        height: auto;
+        text-align: center;
+        border: 1px solid black;
+        padding: 20px 0;
+        margin: 7px 0;
+        background-color: white;
+    }
+    
+    #one_player, #two_players, #reset {
+        padding: 5px;
+    }
+    
+    #play_with, #you_choose {
+        margin: 20px;
+        font-size: 20px;
+    }
+    
+    table{
+        max-width: 450px;
+        max-height: 450px;
+        margin: 5px auto;
+    }
+    
+    td
+    {
+        width: 150px;
+        height: 150px;
+        border: 1px solid black;
+        text-align: center;
+        font-size: 50px;
+        background-color: white;
+        border-radius: 5px;
+    }
+    
+    #helper
+    {
+        display: none;
+    }
+    
+    #statement
+    {
+        max-width: 450px;
+        height: 150px;
+        margin: 50px auto;
+        border: 1px solid black;
+        text-align: center;
+        font-size: 30px;
+        background-color: white;
+    }
+    
+    @media screen and (max-width: 400px) {
+        .inline {
+            display: block;
+        }
+        
+        #choose, #players, #resert_div {
+            width: 100%;
+        }
+    }</style>
+</head>
+<body>
+
+    <h1>Świąteczne Zabawy i Przepisy</h1>
+
+    <!-- Gra świąteczna -->
+    <section>
+        <h2>Gra Świąteczna</h2>
+
+        
+        <article>
+            <h3>Świąteczne Kółko i krzyżyk</h3>
+            <h4>Zasady: Gracze obejmują pola na przemian dążąc do objęcia trzech pól w jednej linii, przy jednoczesnym uniemożliwieniu tego samego przeciwnikowi.
+                Pole może być objęte przez jednego gracza i nie zmienia swego właściciela przez cały przebieg gry.
+                W najbardziej popularnej w Polsce wersji gra odbywa się na polu o wymiarach 3x3.
+            </h4>
+            <body> 
+                <div class="inline">
+                    <div id="players">
+                        <h3>Jak chcesz zagrać?</h3>
+                        <button id="one_player">Zagraj z komputerem</button>
+                        <button id="two_players">Zagraj z inną osobą</button>
+                        <div id="play_with"></div>
+                    </div>
+                    
+                    <div id="choose">
+                        <h3>Wybierz O lub X:</h3>
+                        <button id="X">X</button>
+                        <button id="zero">O</button>
+                        <div id="you_choose"></div>
+                    </div>
+                    
+                    <div id="resert_div">
+                        <button id="reset">Zagraj jeszcze raz!</button>
+                    </div>
+                </div>
+                <div class="inline">
+                    <table>
+                        <!--<th> Kółko - krzyżyk </th>-->
+                        <tr><td id="jeden"></td><td id="dwa"></td><td id="trzy"></td></tr>
+                        <tr><td id="cztery"></td><td id="piec"></td><td id="szesc"></td></tr>
+                        <tr><td id="siedem"></td><td id="osiem"></td><td id="dziewiec"></td></tr>
+                    </table>
+                    
+                    <div id="statement">Wynik gry:</div>
+                </div>
+            </body>
+        </article>
+
+        
+
+    </section>
+
+    <!-- Przepisy na świąteczne smakołyki -->
+    <section>
+        <h2>Świąteczne Przepisy</h2>
+
+        <article>
+            <h3>Ciasto Piernikowe</h3>
+            <ul>
+                <li>SKŁADNIKI:
+                    125 g masła
+                    250 g (1 szklanka) trzcinowego cukru (lub białego)
+                    2 łyżki miodu
+                    2 łyżki powideł śliwkowych
+                    4 łyżeczki przyprawy korzennej lub piernikowej
+                    1 łyżeczka cynamonu
+                    2 łyżki gorzkiego kakao
+                    2 łyżeczki sody oczyszczonej
+                    2 pełne łyżki kawy zbożowej (np. Inki)
+                    250 ml mleka
+                    2 jajka
+                    300 g (2 szklanki) mąki pszennej</li>
+                <li>Kroki do wykonania:
+                    <ol>
+                        <li>Piekarnik nagrzać do 175 stopni C (góra i dół bez termoobiegu).
+                            Formę keksową o wymiarach 12 x 25 cm posmarować tłuszczem i wysypać otrębami, mąką razową, płatkami owsianymi błyskawicznymi lub zwykłą mąką.
+                            W szerokim garnku na małym ogniu roztopić masło, dodać cukier i wymieszać.
+                            Dodać miód, powidła śliwkowe, przyprawę korzenną lub piernikową, cynamon i kakao.
+                            Podgrzewać jeszcze przez minutę na minimalnym ogniu cały czas mieszając.
+                            Zdjąć garnek z ognia (masa będzie bardzo ciepła), odczekać minutę i dodać kolejno sodę, kawę zbożową, mleko oraz roztrzepane jajka.
+                            Wszystko szybko oraz energicznie wymieszać łyżką (masa się spieni).
+                            Cały czas mieszając dodawać stopniowo mąkę, najlepiej bezpośrednio przez sitko. Masę wymieszać tak aby nie było w niej grudek mąki.
+                            Masę wylać do przygotowanej foremki (masa będzie raczej rzadka) i wstawić do piekarnika.
+                            Piec przez 45 - 50 minut, aż wetknięty patyczek będzie suchy. Wyjąć z piekarnika i ostudzić.
+                            Po całkowitym ostudzeniu piernik przekroić na pół i przełożyć powidłami.
+                            Można bezpośrednio ze słoiczka, ewentualnie w celu zagęszczenia bardziej rzadkich powideł, można umieścić je w rondelku i zagotować z 1 łyżką wody,
+                            chwilkę pogotować na małym ogniu.
+                            Przełożony piernik polać polewą: w rondelku zagotować śmietankę, odstawić z ognia, dodać kawę i wymieszać do rozpuszczenia, 
+                            następnie dodać połamaną na kosteczki lub drobno posiekaną czekoladę i mieszać aż całkowicie się rozpuści. Polewę ostudzić.</li>
+                    </ol>
+                </li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>Kulki Migdałowe</h3>
+            <ul>
+                <li>Składniki:
+                    1/2 kostki masła
+                    1 szkl.cukru
+                    1/2 szkl.mleka
+                    3 łyżki kakao
+                    400 g płatków owsianych
+                    zapach waniliowy lub inny</li>
+                <li>Kroki do wykonania:
+                    <ol>
+                        <li>Masło roztopić dodać cukier,mleko i kakao -zagotować.
+                            Dodać płatki owsiane i zapach, wszystko dokładnie wymieszać.Wyłączyć i poczekać chwilę żeby nie parzyło w ręce,formować kuleczki i wstawić do lodówki.</li>
+                    </ol>
+                </li>
+            </ul>
+        </article>
+
+        <!-- Dodaj kolejne przepisy podobnie -->
+
+    </section>
+    <footer>
+        &copy; 2023 Świąteczna Strona. Wszelkie prawa zastrzeżone i zagrożone.
+    </footer>
+</body>
+</html>
